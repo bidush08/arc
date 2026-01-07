@@ -146,3 +146,18 @@ h1, h2, h3 { font-family: 'Cinzel Decorative', 'Noto Sans Devanagari', 'Noto San
     .address-box { text-align: center; }
 
 }
+
+/* Styling for the See More button */
+.gallery-btn {
+    padding: 10px 30px;
+    font-size: 0.9rem;
+    text-decoration: none;
+    border-radius: 4px;
+    display: inline-block;
+}
+
+.gallery-btn:hover {
+    box-shadow: 0 0 20px var(--saffron);
+    transform: scale(1.02);
+}
+
