@@ -22,6 +22,7 @@ const translations = {
         off2Title: "Office 2:",
         off2Addr: "Shop No. 14, C.T. Market<br>Sector 7, Rourkela, Odisha",
         mapBtn: "Get Directions →"
+        seeMore: "See More Photos →"
     },
     hi: {
         mantra: "|| ॐ श्री गणेशाय नमः ||",
@@ -44,7 +45,8 @@ const translations = {
         off1Addr: "C3m/99, एसबीआई बैंक के पीछे<br>कलिंगा विहार, छेंड कॉलोनी<br>राउरकेला, ओडिशा",
         off2Title: "कार्यालय 2:",
         off2Addr: "दुकान नं 14, सी.टी. मार्केट<br>सेक्टर 7, राउरकेला, ओडिशा",
-        mapBtn: "दिशा निर्देश →"
+        mapBtn: "दिशा निर्देश →",
+        seeMore: "और तस्वीरें देखें →",
     },
     or: {
         mantra: "|| ଓଁ ଶ୍ରୀ ଗଣେଶାୟ ନମଃ ||",
@@ -68,6 +70,7 @@ const translations = {
         off2Title: "କାର୍ଯ୍ୟାଳୟ 2:",
         off2Addr: "ଦୋକାନ ନଂ 14, ସି.ଟି. ମାର୍କେଟ<br>ସେକ୍ଟର 7, ରାଉରକେଲା, ଓଡ଼ିଶା",
         mapBtn: "ଦିଗ ନିର୍ଦ୍ଦେଶ →"
+        seeMore: "ଅଧିକ ଫଟୋ ଦେଖନ୍ତୁ →",
     }
 };
 
@@ -178,4 +181,5 @@ window.addEventListener('scroll', () => {
     reveals.forEach(card => {
         if(card.getBoundingClientRect().top < trigger) card.classList.add('visible');
     });
+
 });
