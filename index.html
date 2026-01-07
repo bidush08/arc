@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dr. Biranchi Bihari Tripathy | Vedic Astrologer</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700&family=Eczar:wght@400;600&family=Noto+Sans+Devanagari:wght@400;700&family=Noto+Sans+Odia:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="lang-container">
+        <button class="lang-btn" onclick="toggleLang()">
+            <span id="currentLangIcon">ॐ</span> 
+            <span id="langBtnText">Language</span> ▼
+        </button>
+        <div class="lang-dropdown" id="langDropdown">
+            <div class="lang-option" onclick="changeLanguage('en')">English</div>
+            <div class="lang-option" onclick="changeLanguage('hi')">हिंदी (Hindi)</div>
+            <div class="lang-option" onclick="changeLanguage('or')">ଓଡ଼ିଆ (Odia)</div>
+        </div>
+    </div>
+
+    <div class="cursor-dot" id="cursorDot"></div>
+    <div class="cursor-outline" id="cursorOutline"></div>
+    <canvas id="starCanvas"></canvas>
+    
+    <div class="chakra-container">
+        <div class="ring ring-outer" id="ring1">
+            <span class="rashi-text" style="--i:0">मेष</span> <span class="rashi-text" style="--i:1">वृषभ</span> <span class="rashi-text" style="--i:2">मिथुन</span> <span class="rashi-text" style="--i:3">कर्क</span> 
+            <span class="rashi-text" style="--i:4">सिंह</span> <span class="rashi-text" style="--i:5">कन्या</span> <span class="rashi-text" style="--i:6">तुला</span> <span class="rashi-text" style="--i:7">वृश्चिक</span> 
+            <span class="rashi-text" style="--i:8">धनु</span> <span class="rashi-text" style="--i:9">मकर</span> <span class="rashi-text" style="--i:10">कुंभ</span> <span class="rashi-text" style="--i:11">मीन</span>
+        </div>
+        <div class="ring ring-middle" id="ring2"></div>
+        <div class="ring ring-inner" id="ring3"></div>
+        <div class="om-center">ॐ</div>
+    </div>
+
+    <div class="main-wrapper">
+        <section class="hero-section">
+            <div class="vedic-card visible" id="heroCard">
+                <div class="mantra" id="t-mantra">|| ॐ श्री गणेशाय नमः ||</div>
+                <div class="profile-frame">
+                    <img src="https://images.unsplash.com/photo-1605293665328-97a61d668c17?q=80&w=1000&auto=format&fit=crop" class="profile-img" alt="Guruji">
+                </div>
+                
+                <p id="t-desig">
+                    Deputy Director, Astro, Vastu & Vedic Science Hub<br>
+                    President Of,<br>
+                    Shri Vedamritum Sansthnam Jaipur, Rajasthan | Odisha
+                </p>
+
+                <h1 class="name-title" id="t-name">Dr. Biranchi Bihari Tripathy</h1>
+                <span class="divider-ornament">~ ❖ ~</span>
+                <p style="font-size: 1.2rem; line-height: 1.6; color: #ddd;" id="t-bio">
+                    Unlocking the secrets of your Karma through the divine lens of Parashara Hora Sastra.
+                </p>
+                <a href="tel:+919338452182" class="btn-gold" id="t-cta">Consult Now</a>
+            </div>
+            <div style="margin-top: 40px; color: var(--gold-dim); opacity: 0.7; font-size: 0.9rem;" id="t-scroll">
+                SCROLL TO JOURNEY<br>▼
+            </div>
+        </section>
+
+        <div class="section-spacer"></div>
+
+        <section class="content-section">
+            <div class="vedic-card scroll-reveal">
+                <h2 style="font-size: 2.5rem; margin-bottom: 30px;" id="t-serv-title">Divine Guidance</h2>
+                <div class="services-grid">
+                    <div><h3 style="color: var(--saffron);" id="t-s1-h">✦ Vastu Shastra</h3><p id="t-s1-p">Harmonizing your home and office for prosperity and positive energy.</p></div>
+                    <div><h3 style="color: var(--saffron);" id="t-s2-h">✦ Birth Horoscope</h3><p id="t-s2-p">Complete life prediction based on your exact birth time and date.</p></div>
+                    <div><h3 style="color: var(--saffron);" id="t-s3-h">✦ Palm Reading</h3><p id="t-s3-p">Uncover your destiny and fortune through the lines of your hand.</p></div>
+                    <div><h3 style="color: var(--saffron);" id="t-s4-h">✦ Match Making</h3><p id="t-s4-p">Compatibility analysis (Gun Milan) for a harmonious marriage.</p></div>
+                    <div><h3 style="color: var(--saffron);" id="t-s5-h">✦ Aura Scanning</h3><p id="t-s5-p">Scientific detection of your energy field (Aura) to identify blockages and health issues.</p></div>
+                </div>
+            </div>
+        </section>
+
+        <div class="section-spacer"></div>
+
+        <section class="content-section">
+            <div class="vedic-card scroll-reveal">
+                <h2 style="font-size: 2rem; margin-bottom: 20px;" id="t-gallery-title">Glimpses</h2>
+                <div class="gallery-scroller">
+                    <div class="gallery-item"><img src="https://images.unsplash.com/photo-1519681393784-d120267933ba" alt="Event 1"></div>
+                    <div class="gallery-item"><img src="https://images.unsplash.com/photo-1542273917363-3b1817f69a2d" alt="Event 2"></div>
+                    <div class="gallery-item"><img src="https://images.unsplash.com/photo-1478147427282-58a87a120781" alt="Event 3"></div>
+                    <div class="gallery-item"><img src="https://images.unsplash.com/photo-1532375810709-75b1da00537c" alt="Event 4"></div>
+                </div>
+            </div>
+        </section>
+
+        <div class="section-spacer"></div>
+
+        <section class="content-section">
+            <div class="vedic-card scroll-reveal">
+                <h2 style="font-size: 2rem; margin-bottom: 20px;" id="t-video-title">Vedic Wisdom</h2>
+                <div class="video-wrapper">
+                    <iframe src="https://www.youtube.com/embed/tNlEMF6-dqs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </div>
+        </section>
+
+        <div class="section-spacer"></div>
+
+        <section class="content-section" id="contact">
+            <div class="vedic-card scroll-reveal">
+                <div class="mantra" id="t-labh">|| शुभ लाभ ||</div>
+                <h2 style="margin-bottom: 20px;" id="t-cont-title">Connect with Us</h2>
+                <h3 style="color: var(--gold); font-size: 2rem;">+91 93384 52182</h3>
+                <div class="address-box">
+                    <div class="address-item">
+                        <div class="address-title" id="t-off1-title">Office 1:</div>
+                        <div class="address-text" id="t-off1-addr">
+                            C3m/99, Backside of SBI Bank<br>Kalinga Vihar, Chhend Colony<br>Rourkela, Odisha
+                        </div>
+                    </div>
+                    <div class="address-item">
+                        <div class="address-title" id="t-off2-title">Office 2:</div>
+                        <div class="address-text" id="t-off2-addr">
+                            Shop No. 14, C.T. Market<br>Sector 7, Rourkela, Odisha
+                        </div>
+                    </div>
+                    <a href="https://maps.google.com" target="_blank" class="map-btn" id="t-map-btn">Get Directions →</a>
+                </div>
+                <div class="social-row">
+                    <a href="#" class="social-icon" title="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="social-icon" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="social-icon" title="Website"><i class="fas fa-globe"></i></a>
+                    <a href="#" class="social-icon" title="YouTube"><i class="fab fa-youtube"></i></a>
+                </div>
+                <p class="footer-note">© 2024 Shri Vedamritum Sansthnam</p>
+            </div>
+        </section>
+        <div style="height: 10vh;"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
