@@ -21,8 +21,8 @@ const translations = {
         off1Addr: "C3m/99, Backside of SBI Bank<br>Kalinga Vihar, Chhend Colony<br>Rourkela, Odisha",
         off2Title: "Office 2:",
         off2Addr: "Shop No. 14, C.T. Market<br>Sector 7, Rourkela, Odisha",
-        mapBtn: "Get Directions →"
-        seeMore: "See More Photos →"
+        mapBtn: "Get Directions →",
+        seeMore: "See More Photos →",
     },
     hi: {
         mantra: "|| ॐ श्री गणेशाय नमः ||",
@@ -69,7 +69,7 @@ const translations = {
         off1Addr: "C3m/99, ଏସବିଆଇ ବ୍ୟାଙ୍କ ପଛପାଖ<br>କଳିଙ୍ଗ ବିହାର, ଛେଣ୍ଡ କଲୋନୀ<br>ରାଉରକେଲା, ଓଡ଼ିଶା",
         off2Title: "କାର୍ଯ୍ୟାଳୟ 2:",
         off2Addr: "ଦୋକାନ ନଂ 14, ସି.ଟି. ମାର୍କେଟ<br>ସେକ୍ଟର 7, ରାଉରକେଲା, ଓଡ଼ିଶା",
-        mapBtn: "ଦିଗ ନିର୍ଦ୍ଦେଶ →"
+        mapBtn: "ଦିଗ ନିର୍ଦ୍ଦେଶ →",
         seeMore: "ଅଧିକ ଫଟୋ ଦେଖନ୍ତୁ →",
     }
 };
@@ -183,3 +183,4 @@ window.addEventListener('scroll', () => {
     });
 
 });
+
