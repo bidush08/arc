@@ -91,6 +91,8 @@ function changeLanguage(lang) {
     document.getElementById('t-cta').innerText = t.cta;
     document.getElementById('t-scroll').innerHTML = t.scroll + "<br>▼";
     document.getElementById('t-serv-title').innerText = t.servTitle;
+
+    document.getElementById('t-see-more').innerText = t.seeMore;
     
     document.getElementById('t-s1-h').innerText = t.s1h; document.getElementById('t-s1-p').innerText = t.s1p;
     document.getElementById('t-s2-h').innerText = t.s2h; document.getElementById('t-s2-p').innerText = t.s2p;
@@ -183,4 +185,5 @@ window.addEventListener('scroll', () => {
     });
 
 });
+
 
